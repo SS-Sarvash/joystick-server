@@ -20,6 +20,7 @@ app.post('/joyval', async(req, res) => {         //for usage with client side
     //   console.log(t1+" "+t2);
     const val = (t1+","+t2);
     res.send(val);
+    t1=t2=0;
     // const val={"t1":t1,"t2":t2};
     //   res.json(val);
       // console.log(qry.rows);
