@@ -18,10 +18,10 @@ app.post('/joyval', async(req, res) => {         //for usage with client side
   app.get("/getjoy", async (req, res) => {
     try {
     //   console.log(t1+" "+t2);
-    const val = (t1+","+t2);
-    res.send(val);
-    // const val={"t1":t1,"t2":t2};
-    //   res.json(val);
+    // const val = (t1+","+t2);
+    // res.send(val);
+    const val={"t1":t1,"t2":t2};
+      res.json(val);
       // console.log(qry.rows);
     } catch (err) {
       console.log(err.message);
